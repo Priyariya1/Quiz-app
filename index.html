@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--coding with nick-->
+        <title>Quizz App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+        <div id="container" class="container">
+                <div class="title">Computer Quiz</div>
+                <div id="question" class="question"></div>
+                <label class="option">
+                        <input type="radio" name="option" value="1">
+                        <span id="option1"></span>
+                </label>
+                <label class="option">
+                        <input type="radio" name="option" value="2">
+                        <span id="option2"></span>
+                </label>
+                <label class="option">
+                        <input type="radio" name="option" value="3">
+                        <span id="option3"></span>
+                </label>
+                <label class="option">
+                        <input type="radio" name="option" value="4">
+                        <span id="option4"></span>
+                </label>
+                <button id="nextQuestion" type="button" class="next-btn" onclick="loadNextQuestion()">
+                        NextQuestion</button>
+        </div>
+        <div id="result" class="container result" style="display: none">
+                <div id="score"></div>
+                <button type="button" onclick="restartGame()">Restart</button>
+        </div>
+        <script type="text/javascript" src="questions.js"></script>
+        <script type="text/javascript" src="quiz.js"></script>
+</body>
+
+</html>
